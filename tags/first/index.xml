@@ -14,10 +14,10 @@
     <lastBuildDate>Thu, 06 Jul 2023 00:00:03 +0000</lastBuildDate><atom:link href="https://xubochun.github.io/tags/first/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>區塊鏈(一) - 建立以太坊私有鏈</title>
-      <link>https://xubochun.github.io/posts/2023-07-07/my-first-post/</link>
+      <link>https://xubochun.github.io/posts/</link>
       <pubDate>Thu, 06 Jul 2023 00:00:03 +0000</pubDate>
       
-      <guid>https://xubochun.github.io/posts/2023-07-07/my-first-post/</guid>
+      <guid>https://xubochun.github.io/posts/</guid>
       <description>本篇不會詳述太多區塊鏈基礎知識，大部分的重點會著重於機上的操作，以下內容需要具有基本的程式語言基礎。
 注意：文內所使用的系統是 macOS，版本的不同在操作上也有不同喔！
 不過根據我自己的操作經驗，如果是 Windows 系統其實也沒有差太多。
