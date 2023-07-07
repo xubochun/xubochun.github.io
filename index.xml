@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Xubo&#39;Log</title>
+    <link>https://xubochun.github.io/</link>
+    <description>Recent content on Xubo&#39;Log</description>
+    <image>
+      <title>Xubo&#39;Log</title>
+      <url>https://xubochun.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://xubochun.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Jul 2023 00:00:03 +0000</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>區塊鏈(一) - 建立以太坊私有鏈</title>
+      <link>https://xubochun.github.io/posts/2023-07-07/my-first-post/</link>
+      <pubDate>Thu, 06 Jul 2023 00:00:03 +0000</pubDate>
+      
+      <guid>https://xubochun.github.io/posts/2023-07-07/my-first-post/</guid>
+      <description>本篇不會詳述太多區塊鏈基礎知識，大部分的重點會著重於機上的操作，以下內容需要具有基本的程式語言基礎。
+注意：文內所使用的系統是 macOS，版本的不同在操作上也有不同喔！
+不過根據我自己的操作經驗，如果是 Windows 系統其實也沒有差太多。
+安裝套件 首先第一步先行安裝管理套件 Homebrew，如果已經安裝過的話，可以直接進行下一個步驟。
+這項工具主要用以簡化在 macOS 系統上安裝軟體的過程和易於管理的工具，讓我們更方便的安裝需要的套件。
+從 Ethereum GitHub 可以進入到 Go Ethereum 的網站，在下載的頁面可以看到 Install on macOS via Homebrew 的連結。
+brew tap ethereum/ethereum brew install ethereum 構建Geth (命令行客戶端) 透過 Git 指令來複製一份 Ethereum 在 Github 專案到本機端。
+git clone https://github.com/ethereum/go-ethereum 檔案位置基本上會放在 “使用者的資料夾底下”，名為 go-ethereum 的資料夾。
+再來從 cmd 中直接 cd 到該資料夾中，在執行以下指令：
+cd go-ethereum make geth 如此一來就可以在 cmd 上面直接使用有關 geth 的指令了。
+啟動以太坊 在當前的路徑底下，應該會出現 go-ethereum 的資料夾，大致上經過以上的步驟，我們就可以來啟動以太坊，輸入以下的指令：
+geth console 啟動的過程中，會不斷的一直跑訊息，要稍微讓它跑完後，再直接把整個 cmd 給關掉，因為這不是我們需要的鏈。</description>
+    </item>
+    
+  </channel>
+</rss>
