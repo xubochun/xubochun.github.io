@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Xubo’Log</title>
-    <link>https://xubochun.github.io/</link>
-    <description>Recent content on Xubo’Log</description>
+    <title>blockchain on Xubo’Log</title>
+    <link>https://xubochun.github.io/tags/blockchain/</link>
+    <description>Recent content in blockchain on Xubo’Log</description>
     <image>
       <title>Xubo’Log</title>
       <url>https://xubochun.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Jul 2023 00:00:03 +0000</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Jul 2023 00:00:03 +0000</lastBuildDate><atom:link href="https://xubochun.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>區塊鏈(一) - 建立以太坊私有鏈</title>
       <link>https://xubochun.github.io/posts/2023-07-07-build-ethereum-private-chain/</link>
@@ -30,7 +30,6 @@ $ geth console 在啟動過程中，會不斷顯示訊息。等待它執行完�
 建立以太坊私有鏈 現在，我們終於進入了今天的重頭戲。這裡有幾個步驟需要完成，首先是要建立一個私有鏈的「創世區塊」，也稱為 genesis 的 JSON 檔案，你可以根據我的設定方式，按需求進行修改。
 # genesis.json { &amp;#34;config&amp;#34;: { &amp;#34;chainId&amp;#34;: 10, &amp;#34;homesteadBlock&amp;#34;: 0, &amp;#34;eip150Block&amp;#34;: 0, &amp;#34;eip150Hash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;eip155Block&amp;#34;: 0, &amp;#34;eip158Block&amp;#34;: 0, &amp;#34;byzantiumBlock&amp;#34;: 0, &amp;#34;constantinopleBlock&amp;#34;: 0, &amp;#34;petersburgBlock&amp;#34;: 0, &amp;#34;istanbulBlock&amp;#34;: 0, &amp;#34;ethash&amp;#34;: {} }, &amp;#34;nonce&amp;#34;: &amp;#34;0x0&amp;#34;, &amp;#34;timestamp&amp;#34;: &amp;#34;0x5e4a53b2&amp;#34;, &amp;#34;extraData&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;gasLimit&amp;#34;: &amp;#34;0x47b760&amp;#34;, &amp;#34;difficulty&amp;#34;: &amp;#34;0x80000&amp;#34;, &amp;#34;mixHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;coinbase&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000&amp;#34;, &amp;#34;alloc&amp;#34;: { &amp;#34;0000000000000000000000000000000000000088&amp;#34;: { &amp;#34;balance&amp;#34;: &amp;#34;0x200000000000000000000000000000000000000000000000000000000000000&amp;#34; } }, &amp;#34;number&amp;#34;: &amp;#34;0x0&amp;#34;, &amp;#34;gasUsed&amp;#34;: &amp;#34;0x0&amp;#34;, &amp;#34;parentHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34; } 建立完成後，將此檔案放入 Ethereum 資料夾中，以建立初始區塊。</description>
     </item>
-    
     
   </channel>
 </rss>
