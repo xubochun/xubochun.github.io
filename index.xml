@@ -11,7 +11,24 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Dec 2022 18:58:11 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Dec 2022 19:28:48 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>區塊鏈(四) - 智能合約的開發工具</title>
+      <link>https://xubochun.github.io/posts/2022-12-04-remix-ide/</link>
+      <pubDate>Mon, 05 Dec 2022 19:28:48 +0800</pubDate>
+      
+      <guid>https://xubochun.github.io/posts/2022-12-04-remix-ide/</guid>
+      <description>劇情回顧：
+區塊鏈(一) - 建立以太坊私有鏈 區塊鏈(二) - 創建虛擬錢包 區塊鏈(三) - MetaMask 加密貨幣錢包 現在我們已經擁有私有鏈的環境，也有了可以進行挖礦和帳戶，這次稍微進階一點，說一點有關於智能合約。
+Remix 介紹一個智能合約編譯器 Remix - Ethereum IDE 可以在上面進行智能合約的撰寫、測試等。
+這邊就寫一個簡單的智能合約，我們希望合約來幫助我們做運算，簡單的說明一下，合約中存著一個變數，用戶可以對合約輸入一個數字，合約會將數字乘上 10 倍，並且可以透過公開的變數來查看當前數字是多少。
+// SPDX-License-Identifier: MIT pragma solidity ^0.8.4; contract TestContract { uint public number; function multiply(uint a) public { number = a * 10; } } 許多人可能會遇到在 Remix 編譯後警告訊息，若是出現有關「SPDX license identifier」的訊息，就需要在程式碼第一行加入喔！
+參考來源：Warning: SPDX license identifier not provided in source file。
+Remix compiler 切記寫好程式碼以後，要記得先點選「Compile TestContract.sol」，才會對你的程式碼進行編譯喔！
+Fig. 1. solidity compiler 接下來我們就簡單進行操作一下，來觀察一下合約的執行動作。
+先從環境中使用「JavaScript VM」進行合約測試，如果直接將智能合約部署到私有鏈中，想修改都沒辦法喔，只有重新部署一個新的才行，這點要非常注意。</description>
+    </item>
+    
     <item>
       <title>區塊鏈(三) - MetaMask 加密貨幣錢包</title>
       <link>https://xubochun.github.io/posts/2022-12-03-metamask-wallet/</link>
