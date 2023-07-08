@@ -11,13 +11,13 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Jul 2023 00:00:03 +0000</lastBuildDate><atom:link href="https://xubochun.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:03 +0000</lastBuildDate><atom:link href="https://xubochun.github.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>區塊鏈(二) - 創建虛擬錢包</title>
-      <link>https://xubochun.github.io/posts/2023-07-07-create-ethereum-wallet/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:03 +0000</pubDate>
+      <link>https://xubochun.github.io/posts/2022-12-02-create-ethereum-wallet/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:03 +0000</pubDate>
       
-      <guid>https://xubochun.github.io/posts/2023-07-07-create-ethereum-wallet/</guid>
+      <guid>https://xubochun.github.io/posts/2022-12-02-create-ethereum-wallet/</guid>
       <description>在上一篇文章(區塊鏈(一) - 建立以太坊私有鏈)中，我們成功建立了一個私有鏈環境。現在，我們要快速地啟動這個私有鏈。
 啟動私有鏈 私有鏈的啟動需要透過指令執行，以下是我使用的簡單指令，你可以根據需要進行修改。
 $ geth --identity &amp;#34;TestNode&amp;#34; --networkid 95518 --port &amp;#34;30303&amp;#34; --nodiscover console Fig. 1. start ethereum 你可以先查看當前的區塊數量，由於我們是透過創世區塊來建立此鏈的，所以當前區塊數量應為 0。
@@ -34,10 +34,10 @@ web3.eth.blockNumber Fig. 6. get blochNumber again 再來，檢查一下錢包�
     
     <item>
       <title>區塊鏈(一) - 建立以太坊私有鏈</title>
-      <link>https://xubochun.github.io/posts/2023-07-07-build-ethereum-private-chain/</link>
-      <pubDate>Thu, 06 Jul 2023 00:00:03 +0000</pubDate>
+      <link>https://xubochun.github.io/posts/2022-12-01-build-ethereum-private-chain/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:03 +0000</pubDate>
       
-      <guid>https://xubochun.github.io/posts/2023-07-07-build-ethereum-private-chain/</guid>
+      <guid>https://xubochun.github.io/posts/2022-12-01-build-ethereum-private-chain/</guid>
       <description>安裝套件 在開始建立之前，首先需要安裝管理套件 Homebrew，如果已經安裝過，可以挑過此步驟。
 Homebrew 是一個在 macOS 系統上安裝軟體的管理工具，它可以簡化安裝過程並提供易於管理的界面，讓我們更方便地安裝所需的套件。
 你可以從 Ethereum GitHub 進入 Go Ethereum 的網站，選擇適合的系統做安裝即可。
@@ -48,7 +48,7 @@ $ cd go-ethereum $ make geth 現在，你可以直接在命令提示字元上使
 $ geth console 在啟動過程中，會不斷顯示訊息。等待它執行完畢後，再重新啟動命令提示字元。
 接下來，我們需要找到啟動的區塊鏈存放的資料夾位置，它位於 $HOME/Library/Ethereum/，而該資料夾中的內容並不是我們所需的，可以刪除整個資料夾。這麼做的原因是想知道輸入 geth console 指令後產生的檔案所存放的位置。
 Fig. 1. geth console. 如果是 Windwos 系統的話，則存放於 C:\Users\User\AppData\Local\Ethereum。
-Alt text 建立以太坊私有鏈 現在，我們終於進入了今天的重頭戲。這裡有幾個步驟需要完成，首先是要建立一個私有鏈的「創世區塊」，也稱為 genesis 的 JSON 檔案，你可以根據我的設定方式，按需求進行修改。</description>
+Fig. 2. windows geth 建立以太坊私有鏈 現在，我們終於進入了今天的重頭戲。這裡有幾個步驟需要完成，首先是要建立一個私有鏈的「創世區塊」，也稱為 genesis 的 JSON 檔案，你可以根據我的設定方式，按需求進行修改。</description>
     </item>
     
   </channel>

@@ -2,29 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xubochun.github.io/tags/blockchain/</loc>
-    <lastmod>2023-07-07T00:00:03+00:00</lastmod>
-  </url><url>
     <loc>https://xubochun.github.io/tags/ethereum/</loc>
-    <lastmod>2023-07-07T00:00:03+00:00</lastmod>
+    <lastmod>2022-12-03T18:58:11+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/tags/metamask/</loc>
+    <lastmod>2022-12-03T18:58:11+08:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/posts/</loc>
-    <lastmod>2023-07-07T00:00:03+00:00</lastmod>
+    <lastmod>2022-12-03T18:58:11+08:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/tags/</loc>
-    <lastmod>2023-07-07T00:00:03+00:00</lastmod>
+    <lastmod>2022-12-03T18:58:11+08:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/</loc>
-    <lastmod>2023-07-07T00:00:03+00:00</lastmod>
+    <lastmod>2022-12-03T18:58:11+08:00</lastmod>
   </url><url>
-    <loc>https://xubochun.github.io/posts/2023-07-07-create-ethereum-wallet/</loc>
-    <lastmod>2023-07-07T00:00:03+00:00</lastmod>
+    <loc>https://xubochun.github.io/posts/2022-12-03-metamask-wallet/</loc>
+    <lastmod>2022-12-03T18:58:11+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/tags/blockchain/</loc>
+    <lastmod>2022-12-02T00:00:03+00:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/posts/2022-12-02-create-ethereum-wallet/</loc>
+    <lastmod>2022-12-02T00:00:03+00:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/tags/private-chain/</loc>
-    <lastmod>2023-07-06T00:00:03+00:00</lastmod>
+    <lastmod>2022-12-01T00:00:03+00:00</lastmod>
   </url><url>
-    <loc>https://xubochun.github.io/posts/2023-07-07-build-ethereum-private-chain/</loc>
-    <lastmod>2023-07-06T00:00:03+00:00</lastmod>
+    <loc>https://xubochun.github.io/posts/2022-12-01-build-ethereum-private-chain/</loc>
+    <lastmod>2022-12-01T00:00:03+00:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/archives/</loc>
   </url><url>
     <loc>https://xubochun.github.io/categories/</loc>
   </url><url>
