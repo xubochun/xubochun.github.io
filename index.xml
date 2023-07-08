@@ -11,7 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Dec 2022 20:58:29 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Dec 2022 21:07:53 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>區塊鏈(八) - 以太坊私有鏈多個節點連結</title>
+      <link>https://xubochun.github.io/posts/2022-12-08-multi-node-connection/</link>
+      <pubDate>Thu, 08 Dec 2022 21:07:53 +0800</pubDate>
+      
+      <guid>https://xubochun.github.io/posts/2022-12-08-multi-node-connection/</guid>
+      <description>劇情回顧：
+區塊鏈(一) - 建立以太坊私有鏈 區塊鏈(二) - 創建虛擬錢包 區塊鏈(三) - MetaMask 加密貨幣錢包 區塊鏈(四) - 智能合約的開發工具 區塊鏈(五) - 在私有鏈上部署智能合約 Part 1 區塊鏈(六) - 在私有鏈上部署智能合約 Part 2 區塊鏈(七) - Windows10 建立以太坊私有鏈 獲取節點資訊 已經在 MacOS 和 Windows10 上架設好私有鏈，接下來要做的事情就是使兩個節點連接到同一個鏈上，這樣就可以模擬不同的使用者在公有鏈上交易的環境與過程。
+取得本機端節點資訊的指令如下：
+$ admin.nodeInfo.enode Fig. 1. nodeInfo. 在兩個冒號 :: 後面的連接是該節點電腦的 IP，30303 是端口號。
+要讓兩個節點連接在一起，需要使用以下指令：
+$ admin.addPeer(&amp;#34;enode://...&amp;#34;) 在連接之前，先確認一下節點情況。如果還沒有連接，會顯示 -&amp;gt; [ ]。
+$ admin.peers Fig. 2. peers. 兩台測試機連線 以下是兩台測試機連結的情況，當兩台節點連接後，請注意將 @ 後面的 IP 更換為本機連接網絡的 IP。
+MacOS 節點連接資訊： enode://5db35aae54803ead9be476db5b7b20633c13ba129fd040c9520731f85f845bf52fbb24da46b3c48eb1a5672b36c3713fc880ebad0c0d2b58f478dbbf55dcd3cc@127.0.0.1:30303?discport=0 Windows10 節點連接資訊： enode://f06ecc138441e7a61076c9bc5f1d149b5f4907a96b3f630b64574facfd30342b5a3d6f660c9450dce39108bbb06210847b809482e67c7a9c639890c61583c9db@127.0.0.1:30303?discport=0 連接成功後，你可以使用以下方法測試連接情況：</description>
+    </item>
+    
     <item>
       <title>區塊鏈(七) - Windows10 建立以太坊私有鏈</title>
       <link>https://xubochun.github.io/posts/2022-12-07-build-private-ethereum-chain-on-windows/</link>
