@@ -11,7 +11,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Dec 2022 20:35:00 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/tags/smart-contract/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Dec 2022 20:58:29 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/tags/smart-contract/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>區塊鏈(七) - Windows10 建立以太坊私有鏈</title>
+      <link>https://xubochun.github.io/posts/2022-12-07-build-private-ethereum-chain-on-windows/</link>
+      <pubDate>Thu, 08 Dec 2022 20:58:29 +0800</pubDate>
+      
+      <guid>https://xubochun.github.io/posts/2022-12-07-build-private-ethereum-chain-on-windows/</guid>
+      <description>劇情回顧：
+區塊鏈(一) - 建立以太坊私有鏈 區塊鏈(二) - 創建虛擬錢包 區塊鏈(三) - MetaMask 加密貨幣錢包 區塊鏈(四) - 智能合約的開發工具 區塊鏈(五) - 在私有鏈上部署智能合約 Part 1 區塊鏈(六) - 在私有鏈上部署智能合約 Part 2 對於多數人使用的系統是 Windows，所以本篇將描述如何在 Windows 上建立以太坊私有鏈。
+下載 Go Ethereum Windows 版本 下載方式和 MacOS 是一樣的，可以到 Go Ethereum網站 下載，這部分可以參考第一篇文章。
+Fig. 1. go-ethereum for windows. 啟動以太坊 安裝完成後，打開命令提示字元（CMD），輸入以下指令來啟動以太坊節點。
+$ geth 在資訊欄中找到 dir，這是存放鏈數據的位置。
+接下來的步驟是創建一個「創世區塊」。
+你可以根據需要進行細部修改，將下面的內容保存到 genesis.json 文件中，並將該文件放入鏈數據目錄中。
+# genesis.json { &amp;#34;config&amp;#34;: { &amp;#34;chainId&amp;#34;: 10, &amp;#34;homesteadBlock&amp;#34;: 0, &amp;#34;eip150Block&amp;#34;: 0, &amp;#34;eip150Hash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;eip155Block&amp;#34;: 0, &amp;#34;eip158Block&amp;#34;: 0, &amp;#34;byzantiumBlock&amp;#34;: 0, &amp;#34;constantinopleBlock&amp;#34;: 0, &amp;#34;petersburgBlock&amp;#34;: 0, &amp;#34;istanbulBlock&amp;#34;: 0, &amp;#34;ethash&amp;#34;: {} }, &amp;#34;nonce&amp;#34;: &amp;#34;0x0&amp;#34;, &amp;#34;timestamp&amp;#34;: &amp;#34;0x5e4a53b2&amp;#34;, &amp;#34;extraData&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;gasLimit&amp;#34;: &amp;#34;0x47b760&amp;#34;, &amp;#34;difficulty&amp;#34;: &amp;#34;0x80000&amp;#34;, &amp;#34;mixHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34;, &amp;#34;coinbase&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000&amp;#34;, &amp;#34;alloc&amp;#34;: { &amp;#34;0000000000000000000000000000000000000088&amp;#34;: { &amp;#34;balance&amp;#34;: &amp;#34;0x200000000000000000000000000000000000000000000000000000000000000&amp;#34; } }, &amp;#34;number&amp;#34;: &amp;#34;0x0&amp;#34;, &amp;#34;gasUsed&amp;#34;: &amp;#34;0x0&amp;#34;, &amp;#34;parentHash&amp;#34;: &amp;#34;0x0000000000000000000000000000000000000000000000000000000000000000&amp;#34; } 啟動私有鏈 從 CMD 切換到鏈數據目錄下，並輸入以下指令來初始化私有鏈。</description>
+    </item>
+    
     <item>
       <title>區塊鏈(六) - 在私有鏈上部署智能合約 Part 2</title>
       <link>https://xubochun.github.io/posts/2022-12-06-deploy-smart-contracts-on-private-chains-2/</link>
