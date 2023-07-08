@@ -2,29 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xubochun.github.io/tags/etherum/</loc>
-    <lastmod>2022-12-05T19:28:48+08:00</lastmod>
+    <loc>https://xubochun.github.io/tags/ethereum/</loc>
+    <lastmod>2022-12-05T19:59:44+08:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/posts/</loc>
+    <lastmod>2022-12-05T19:59:44+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/tags/private-chain/</loc>
+    <lastmod>2022-12-05T19:59:44+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/tags/smart-contract/</loc>
+    <lastmod>2022-12-05T19:59:44+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/tags/</loc>
+    <lastmod>2022-12-05T19:59:44+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/</loc>
+    <lastmod>2022-12-05T19:59:44+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains/</loc>
+    <lastmod>2022-12-05T19:59:44+08:00</lastmod>
+  </url><url>
+    <loc>https://xubochun.github.io/tags/etherum/</loc>
     <lastmod>2022-12-05T19:28:48+08:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/tags/remix-ide/</loc>
     <lastmod>2022-12-05T19:28:48+08:00</lastmod>
   </url><url>
-    <loc>https://xubochun.github.io/tags/smart-contract/</loc>
-    <lastmod>2022-12-05T19:28:48+08:00</lastmod>
-  </url><url>
-    <loc>https://xubochun.github.io/tags/</loc>
-    <lastmod>2022-12-05T19:28:48+08:00</lastmod>
-  </url><url>
-    <loc>https://xubochun.github.io/</loc>
-    <lastmod>2022-12-05T19:28:48+08:00</lastmod>
-  </url><url>
     <loc>https://xubochun.github.io/posts/2022-12-04-remix-ide/</loc>
     <lastmod>2022-12-05T19:28:48+08:00</lastmod>
-  </url><url>
-    <loc>https://xubochun.github.io/tags/ethereum/</loc>
-    <lastmod>2022-12-03T18:58:11+08:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/tags/metamask/</loc>
     <lastmod>2022-12-03T18:58:11+08:00</lastmod>
@@ -37,9 +43,6 @@
   </url><url>
     <loc>https://xubochun.github.io/posts/2022-12-02-create-ethereum-wallet/</loc>
     <lastmod>2022-12-02T00:00:03+00:00</lastmod>
-  </url><url>
-    <loc>https://xubochun.github.io/tags/private-chain/</loc>
-    <lastmod>2022-12-01T00:00:03+00:00</lastmod>
   </url><url>
     <loc>https://xubochun.github.io/posts/2022-12-01-build-ethereum-private-chain/</loc>
     <lastmod>2022-12-01T00:00:03+00:00</lastmod>

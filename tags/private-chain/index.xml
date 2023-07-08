@@ -11,7 +11,27 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Dec 2022 00:00:03 +0000</lastBuildDate><atom:link href="https://xubochun.github.io/tags/private-chain/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Dec 2022 19:59:44 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/tags/private-chain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>區塊鏈(五) - 在私有鏈上部署智能合約 Part 1</title>
+      <link>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains/</link>
+      <pubDate>Mon, 05 Dec 2022 19:59:44 +0800</pubDate>
+      
+      <guid>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains/</guid>
+      <description>劇情回顧：
+區塊鏈(一) - 建立以太坊私有鏈 區塊鏈(二) - 創建虛擬錢包 區塊鏈(三) - MetaMask 加密貨幣錢包 區塊鏈(四) - 智能合約的開發工具 上一集提到可以利用 Remix-Ethereum IDE 來撰寫智能合約以及測試智能合約，如果還不熟悉過程的快去看看喔！
+首先，這是很多人的疑問，就是雖然可以在線上進行智能合約的測試，但如果要將寫好的合約部署到私有鏈上該怎麼做呢？
+其中，有兩個方法可以進行：
+第一種部署智能合約的方法 當我們寫好一個智能合約時，就像寫一段程式碼一樣，需要將這段程式碼進行編譯。完成編譯後，可以將目光轉移到下方的三個按鈕。
+最下面一個「Compilation Details」點擊後會出現有關這項合約的詳細資訊。
+Fig. 1. compilation details. 在這裡，我們可以找到「WEB3DEPLOY」的標題。
+下方所寫的內容其實就是這項合約部署的指令。根據這些指令，我們可以在開啟私有鏈的 CMD 環境中執行來部署合約。
+Fig. 2. WEB3DEPLOY. 部屬時可能會發生的錯誤訊息 請注意，如果你輸入指令後出現錯誤訊息，可以嘗試以下步驟進行修改，來完成「透過指令來部署合約」。
+當你遇到相同的錯誤時，需要更正指令為 new web3.eth.contract。請注意，new 需要刪除，同時 C 需要改為小寫。最後，只需要輸入以下指令： var testContract = web3.eth.contract([...]) Fig. 3. var testContract. 可以呼叫 testContract 出來查看合約。
+Fig. 4. testContract. 再來 testContract.deploy 需要改成 testContract.new，然後將註解部分移動到正確位置。
+var test = testContract.new({ data: &amp;#39;0x60806...（數字太長省略）&amp;#39;, arguments: [], // 將 from 和 gas 移動上來，其餘不變。 from: web3.</description>
+    </item>
+    
     <item>
       <title>區塊鏈(一) - 建立以太坊私有鏈</title>
       <link>https://xubochun.github.io/posts/2022-12-01-build-ethereum-private-chain/</link>
@@ -28,7 +48,7 @@ $ cd go-ethereum $ make geth 現在，你可以直接在命令提示字元上使
 $ geth console 在啟動過程中，會不斷顯示訊息。等待它執行完畢後，再重新啟動命令提示字元。
 接下來，我們需要找到啟動的區塊鏈存放的資料夾位置，它位於 $HOME/Library/Ethereum/，而該資料夾中的內容並不是我們所需的，可以刪除整個資料夾。這麼做的原因是想知道輸入 geth console 指令後產生的檔案所存放的位置。
 Fig. 1. geth console. 如果是 Windwos 系統的話，則存放於 C:\Users\User\AppData\Local\Ethereum。
-Fig. 2. windows geth 建立以太坊私有鏈 現在，我們終於進入了今天的重頭戲。這裡有幾個步驟需要完成，首先是要建立一個私有鏈的「創世區塊」，也稱為 genesis 的 JSON 檔案，你可以根據我的設定方式，按需求進行修改。</description>
+Fig. 2. windows geth.</description>
     </item>
     
   </channel>

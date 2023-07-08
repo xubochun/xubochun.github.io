@@ -11,7 +11,27 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Dec 2022 19:28:48 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Dec 2022 19:59:44 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>區塊鏈(五) - 在私有鏈上部署智能合約 Part 1</title>
+      <link>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains/</link>
+      <pubDate>Mon, 05 Dec 2022 19:59:44 +0800</pubDate>
+      
+      <guid>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains/</guid>
+      <description>劇情回顧：
+區塊鏈(一) - 建立以太坊私有鏈 區塊鏈(二) - 創建虛擬錢包 區塊鏈(三) - MetaMask 加密貨幣錢包 區塊鏈(四) - 智能合約的開發工具 上一集提到可以利用 Remix-Ethereum IDE 來撰寫智能合約以及測試智能合約，如果還不熟悉過程的快去看看喔！
+首先，這是很多人的疑問，就是雖然可以在線上進行智能合約的測試，但如果要將寫好的合約部署到私有鏈上該怎麼做呢？
+其中，有兩個方法可以進行：
+第一種部署智能合約的方法 當我們寫好一個智能合約時，就像寫一段程式碼一樣，需要將這段程式碼進行編譯。完成編譯後，可以將目光轉移到下方的三個按鈕。
+最下面一個「Compilation Details」點擊後會出現有關這項合約的詳細資訊。
+Fig. 1. compilation details. 在這裡，我們可以找到「WEB3DEPLOY」的標題。
+下方所寫的內容其實就是這項合約部署的指令。根據這些指令，我們可以在開啟私有鏈的 CMD 環境中執行來部署合約。
+Fig. 2. WEB3DEPLOY. 部屬時可能會發生的錯誤訊息 請注意，如果你輸入指令後出現錯誤訊息，可以嘗試以下步驟進行修改，來完成「透過指令來部署合約」。
+當你遇到相同的錯誤時，需要更正指令為 new web3.eth.contract。請注意，new 需要刪除，同時 C 需要改為小寫。最後，只需要輸入以下指令： var testContract = web3.eth.contract([...]) Fig. 3. var testContract. 可以呼叫 testContract 出來查看合約。
+Fig. 4. testContract. 再來 testContract.deploy 需要改成 testContract.new，然後將註解部分移動到正確位置。
+var test = testContract.new({ data: &amp;#39;0x60806...（數字太長省略）&amp;#39;, arguments: [], // 將 from 和 gas 移動上來，其餘不變。 from: web3.</description>
+    </item>
+    
     <item>
       <title>區塊鏈(四) - 智能合約的開發工具</title>
       <link>https://xubochun.github.io/posts/2022-12-04-remix-ide/</link>
@@ -25,7 +45,7 @@ Remix 介紹一個智能合約編譯器 Remix - Ethereum IDE 可以在上面進�
 // SPDX-License-Identifier: MIT pragma solidity ^0.8.4; contract TestContract { uint public number; function multiply(uint a) public { number = a * 10; } } 許多人可能會遇到在 Remix 編譯後警告訊息，若是出現有關「SPDX license identifier」的訊息，就需要在程式碼第一行加入喔！
 參考來源：Warning: SPDX license identifier not provided in source file。
 Remix compiler 切記寫好程式碼以後，要記得先點選「Compile TestContract.sol」，才會對你的程式碼進行編譯喔！
-Fig. 1. solidity compiler 接下來我們就簡單進行操作一下，來觀察一下合約的執行動作。
+Fig. 1. solidity compiler. 接下來我們就簡單進行操作一下，來觀察一下合約的執行動作。
 先從環境中使用「JavaScript VM」進行合約測試，如果直接將智能合約部署到私有鏈中，想修改都沒辦法喔，只有重新部署一個新的才行，這點要非常注意。</description>
     </item>
     
@@ -41,15 +61,15 @@ Fig. 1. solidity compiler 接下來我們就簡單進行操作一下，來觀察
 畢竟如果都依靠終端機來操作實在有點乏味，現在就來透過一個管理虛擬錢包的工具，試試看吧！
 以太坊虛擬錢包 (Account) 如果還記得，當我們建立好一條「以太坊私有鏈」時，需要在鏈中去創建一個帳戶，此帳戶的用途，大多數是在鏈中進行「發送交易」、「部署智能合約」和「挖礦」的用途。
 當我們打開 Ethereum 的資料夾後，可以看到有一個名為「keystore」的資料夾，在裡面所存放的就是「私鑰」，而檔案名稱後面就是你的「公鑰」。
-Fig. 1. keystore MetaMask 當我們透過命令提示字元(CMD)的方式操作以太坊，這樣的動作實在是非常的麻煩，因為不論是交易也好，亦或是查看虛擬貨幣的數量，都需要依靠指令來查詢。
+Fig. 1. keystore. MetaMask 當我們透過命令提示字元(CMD)的方式操作以太坊，這樣的動作實在是非常的麻煩，因為不論是交易也好，亦或是查看虛擬貨幣的數量，都需要依靠指令來查詢。
 除了 MetaMask 還有很多不同的錢包軟體，可以根據自己上手的使用就可以了。
 官方網站中，可以直接下載 Google Chrome 擴充功能，現在更開放 iOS 和 Android 版本提供使用，當擴充功能安裝好以後，就可以開啟了。
-Fig. 2. MetaMask 現在還蠻人性化的，會詢問你是否已經擁有帳戶了，如果沒有，也可以幫你建立一個新的。
-Fig. 3. new to MetaMask 這邊需要你先行建立一個帳號，而這個類似主帳號的概念。
+Fig. 2. MetaMask. 現在還蠻人性化的，會詢問你是否已經擁有帳戶了，如果沒有，也可以幫你建立一個新的。
+Fig. 3. new to MetaMask. 這邊需要你先行建立一個帳號，而這個類似主帳號的概念。
 切記，當你創建好一個新帳戶以後，千萬不可以把私鑰給別人，如果別人取得私鑰是可以直接使用你的錢包的。
-Fig. 4. secret backup phrase 登入以後，就是要把我們在私有鏈所創建的帳號給匯入，往後可以透過 MetaMask 來直接對私有鏈進行操作。
+Fig. 4. secret backup phrase. 登入以後，就是要把我們在私有鏈所創建的帳號給匯入，往後可以透過 MetaMask 來直接對私有鏈進行操作。
 先點選右上角頭像，選擇「Import Account」，選擇「JSON File」來把原先存放在 Ethereum 內的 keystore 資料夾檔案放進去。
-Fig. 5. import account 根據經驗來說，匯入之後會等一段時間，匯入以後只需要重開就會看到私有鏈的帳號匯入。
+Fig. 5. import account. 根據經驗來說，匯入之後會等一段時間，匯入以後只需要重開就會看到私有鏈的帳號匯入。
 如果還有印象，我們在上集建立好私有鏈以後，有進行挖礦的動作，獲得了 2 塊以太幣，而我們匯入帳戶到 MetaMask 中，也會看到，這邊要注意一下，頭像左邊是選擇伺服器，需要選擇到「Localhost 8545」才會讀取到自己本機端的私有鏈。
 Fig. 6.</description>
     </item>
@@ -62,16 +82,16 @@ Fig. 6.</description>
       <guid>https://xubochun.github.io/posts/2022-12-02-create-ethereum-wallet/</guid>
       <description>在上一篇文章(區塊鏈(一) - 建立以太坊私有鏈)中，我們成功建立了一個私有鏈環境。現在，我們要快速地啟動這個私有鏈。
 啟動私有鏈 私有鏈的啟動需要透過指令執行，以下是我使用的簡單指令，你可以根據需要進行修改。
-$ geth --identity &amp;#34;TestNode&amp;#34; --networkid 95518 --port &amp;#34;30303&amp;#34; --nodiscover console Fig. 1. start ethereum 你可以先查看當前的區塊數量，由於我們是透過創世區塊來建立此鏈的，所以當前區塊數量應為 0。
-web3.eth.blockNumber Fig. 2. check blockNumber 查看帳戶餘額 在進行挖礦之前，先檢查一下錢包中有多少虛擬貨幣。
+$ geth --identity &amp;#34;TestNode&amp;#34; --networkid 95518 --port &amp;#34;30303&amp;#34; --nodiscover console Fig. 1. start ethereum. 你可以先查看當前的區塊數量，由於我們是透過創世區塊來建立此鏈的，所以當前區塊數量應為 0。
+web3.eth.blockNumber Fig. 2. check blockNumber. 查看帳戶餘額 在進行挖礦之前，先檢查一下錢包中有多少虛擬貨幣。
 如果你還沒有虛擬錢包，可以使用 Ethereum 提供的 API 來生成一個。這個錢包相關的檔案會放在同一個資料夾中，這樣你以後就可以在不同平台上使用這個錢包。請注意保存好包含私鑰的檔案，一旦丟失，將無法找回！
-account = &amp;#34;0x673b06829873d33b6fe13305ae472a6884d7e752&amp;#34; eth.getBalance(account) Fig. 3. get balance 挖礦 只有在以太坊私有鏈中擁有錢包，我們才能進行挖礦，因為挖出的虛擬貨幣需要一個錢包地址來儲存。
+account = &amp;#34;0x673b06829873d33b6fe13305ae472a6884d7e752&amp;#34; eth.getBalance(account) Fig. 3. get balance. 挖礦 只有在以太坊私有鏈中擁有錢包，我們才能進行挖礦，因為挖出的虛擬貨幣需要一個錢包地址來儲存。
 如果你創建了多個錢包，可以使用指令查看本機端當前有多少個虛擬錢包。
-web3.eth.accounts Fig. 4. eth account 既然我們知道當前區塊數為 0，並且已經創建了錢包，接下來就可以進行挖礦了。
+web3.eth.accounts Fig. 4. eth account. 既然我們知道當前區塊數為 0，並且已經創建了錢包，接下來就可以進行挖礦了。
 你可以在挖礦的指令中設定挖礦次數，當達到指定次數後，它會自動停止。
 miner.start(); admin.sleepBlocks(1); miner.stop(); 第一次執行挖礦時，它會執行到進度條達到 100% 後停止。
-Fig. 5. genearting DAG 完成挖礦後，讓我們檢查一下區塊數量，因為我們只進行了一次挖礦，所以區塊數量應為 1。
-web3.eth.blockNumber Fig. 6. get blochNumber again 再來，檢查一下錢包中目前有多少虛擬貨幣。</description>
+Fig. 5. genearting DAG. 完成挖礦後，讓我們檢查一下區塊數量，因為我們只進行了一次挖礦，所以區塊數量應為 1。
+web3.eth.blockNumber Fig. 6. get blochNumber again. 再來，檢查一下錢包中目前有多少虛擬貨幣。</description>
     </item>
     
     <item>
@@ -90,7 +110,7 @@ $ cd go-ethereum $ make geth 現在，你可以直接在命令提示字元上使
 $ geth console 在啟動過程中，會不斷顯示訊息。等待它執行完畢後，再重新啟動命令提示字元。
 接下來，我們需要找到啟動的區塊鏈存放的資料夾位置，它位於 $HOME/Library/Ethereum/，而該資料夾中的內容並不是我們所需的，可以刪除整個資料夾。這麼做的原因是想知道輸入 geth console 指令後產生的檔案所存放的位置。
 Fig. 1. geth console. 如果是 Windwos 系統的話，則存放於 C:\Users\User\AppData\Local\Ethereum。
-Fig. 2. windows geth 建立以太坊私有鏈 現在，我們終於進入了今天的重頭戲。這裡有幾個步驟需要完成，首先是要建立一個私有鏈的「創世區塊」，也稱為 genesis 的 JSON 檔案，你可以根據我的設定方式，按需求進行修改。</description>
+Fig. 2. windows geth.</description>
     </item>
     
   </channel>
