@@ -11,13 +11,31 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Dec 2022 19:59:44 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 20:35:00 +0800</lastBuildDate><atom:link href="https://xubochun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>區塊鏈(六) - 在私有鏈上部署智能合約 Part 2</title>
+      <link>https://xubochun.github.io/posts/2022-12-06-deploy-smart-contracts-on-private-chains-2/</link>
+      <pubDate>Tue, 06 Dec 2022 20:35:00 +0800</pubDate>
+      
+      <guid>https://xubochun.github.io/posts/2022-12-06-deploy-smart-contracts-on-private-chains-2/</guid>
+      <description>劇情回顧：
+區塊鏈(一) - 建立以太坊私有鏈 區塊鏈(二) - 創建虛擬錢包 區塊鏈(三) - MetaMask 加密貨幣錢包 區塊鏈(四) - 智能合約的開發工具 區塊鏈(五) - 在私有鏈上部署智能合約 Part 1 此篇是第五集的延伸，希望從 Remix 上測試好智能合約以後，就直接部署到私有鏈中。還記不記得前幾集，我們安裝了 MetaMask 的錢包，這時候我們可以利用它當作 Remix 和私有鏈之間的橋樑。
+說得簡單一點，就是 Remix 透過 MetaMask 錢包替我們發送 智能合約 到私有鏈中等待驗證。
+完成編譯後的智能合約，可以到部署的頁面先選擇環境「Injected Web3」，然後按下「Deploy」。
+Fig. 1. injected web3. Google Chrome 會自動彈出 MetaMask 的視窗，這是要我們授權它使用 MetaMask 錢包。
+Fig. 2. google chrome extension metamask. 請記得選擇從私有鏈建立的帳戶（Account）。
+確認部署資訊後，可以按下「Confirm」。這樣在你的 Cmd 端就會看到有一項交易正在等待驗證。
+Fig. 3. confirm-transaction. 只需要進行挖礦來驗證這筆交易，即可完成部署。
+Fig. 4. miner. 當這個合約成功加入區塊後，從 Remix 網頁的下方會出現一個智能合約。這個區域就像上集介紹的部分，可以操作合約。
+Fig. 5. remix smart contract.</description>
+    </item>
+    
     <item>
       <title>區塊鏈(五) - 在私有鏈上部署智能合約 Part 1</title>
-      <link>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains/</link>
+      <link>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains-1/</link>
       <pubDate>Mon, 05 Dec 2022 19:59:44 +0800</pubDate>
       
-      <guid>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains/</guid>
+      <guid>https://xubochun.github.io/posts/2022-12-05-deploy-smart-contracts-on-private-chains-1/</guid>
       <description>劇情回顧：
 區塊鏈(一) - 建立以太坊私有鏈 區塊鏈(二) - 創建虛擬錢包 區塊鏈(三) - MetaMask 加密貨幣錢包 區塊鏈(四) - 智能合約的開發工具 上一集提到可以利用 Remix-Ethereum IDE 來撰寫智能合約以及測試智能合約，如果還不熟悉過程的快去看看喔！
 首先，這是很多人的疑問，就是雖然可以在線上進行智能合約的測試，但如果要將寫好的合約部署到私有鏈上該怎麼做呢？
